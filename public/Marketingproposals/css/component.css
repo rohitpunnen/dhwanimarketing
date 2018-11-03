@@ -1,0 +1,357 @@
+.cbp-rfgrid {
+	margin: 35px 0 0 0;
+	padding: 5vw;
+	list-style: none;
+	position: relative;
+	width: 100%;
+}
+
+.cbp-rfgrid li {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 16.6666667%; /* Fallback */
+	width: -webkit-calc(100% / 6);
+	width: calc(100% / 6);
+	height:150px;
+	
+
+
+/*
+	background:-webkit-linear-gradient(rgba(248, 145, 6,0.5), rgba(230, 31, 87  ,0.5));
+  background:-moz-linear-gradient(rgba(248, 145, 6,0.5), rgba(230, 31, 87  ,0.5));
+ -webkit-text-fill-color: black;
+box-shadow: 0 3px 28px 0 rgba( 230, 31, 87,0.7), 0 0px 55px 0 rgba(0, 0, 0, 0.21);*/
+background:-webkit-linear-gradient(rgba(248, 145, 6, 0.91), rgba(230, 31, 87, 0.85));
+    background: -moz-linear-gradient(rgba(248, 145, 6, 0.91), rgba(230, 31, 87, 0.85));
+    -webkit-text-fill-color: #f0f0f0;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.7), 0 0px 20px 0 rgba(0, 0, 0, 0.21);
+
+}
+}
+
+.cbp-rfgrid li a,
+.cbp-rfgrid li a img {
+	display: block;
+	width: 100%;
+	cursor: pointer;
+}
+
+.cbp-rfgrid li a img {
+	max-width: 100%;
+}
+
+.cbp-rfgrid li div{
+	left: 20px;
+	top: 20px;
+	right: 20px;
+	bottom: 20px;
+	padding-top: 30%;
+	
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+    align-items: center;
+    text-align: center;
+     
+
+}
+.cbp-rfgrid li:hover{
+
+
+	background:-webkit-linear-gradient(#f89106, #e61f57);
+  background:-moz-linear-gradient(#f89106, #e61f57);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+}
+.cbp-rfgrid li div h3 {
+	width: 100%;
+	
+	text-transform: uppercase;
+	font-size: 1.0em;
+	letter-spacing: 2px;
+	padding: 0 10px;
+}
+
+/* Flexbox is used for centering the heading 
+.cbp-rfgrid li a div {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	right: 20px;
+	bottom: 20px;
+	background: rgba(71,163,218,0.2);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+}
+
+.cbp-rfgrid li a:hover div {
+	opacity: 1;
+}
+
+.cbp-rfgrid li a div h3 {
+	width: 100%;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	letter-spacing: 2px;
+	padding: 0 10px;
+}*/
+
+/* Example for media query: change number of items per row */
+
+@media screen and (max-width: 1190px) {
+	.cbp-rfgrid li {
+		width: 20%; /* Fallback */
+		width: -webkit-calc(100% / 5);
+		width: calc(100% / 5);
+	}
+}
+
+@media screen and (max-width: 945px) {
+	.cbp-rfgrid li {
+		width: 25%; /* Fallback */
+		width: -webkit-calc(100% / 4);
+		width: calc(100% / 4);
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.cbp-rfgrid li {
+		width: 33.3333333%; /* Fallback */
+		width: -webkit-calc(100% / 3);
+		width: calc(100% / 3);
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.cbp-rfgrid li {
+		width: 33.3333333%; /* Fallback */
+		width: -webkit-calc(100% / 3);
+		width: calc(100% / 3);
+	}
+
+}
+
+@media screen and (max-width: 416px) {
+	.cbp-rfgrid li {
+		width: 50%; /* Fallback */
+		width: -webkit-calc(100% / 2);
+		width: calc(100% / 2);
+	}
+	.cbp-rfgrid li div h3 {
+		font-size: 0.8em;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.cbp-rfgrid li {
+		width: 100%;
+	}
+	.cbp-rfgrid li div h3 {
+		font-size: 0.8em;
+	}
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Stay on top */
+    top: 0;
+    left: 0;
+    
+    background:-webkit-linear-gradient(#f89106, #e61f57);
+background:-moz-linear-gradient(#f89106, #e61f57); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 30px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    text-decoration: underline;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding:0px;
+    padding-top: 0px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+#Menubtn span{
+     display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 1px;
+    z-index: 1;
+    margin: auto;
+    margin-bottom: 5px;
+  
+}
+
+#Menubtn{
+	background: linear-gradient(-45deg,#EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 7s ease infinite;
+	-moz-animation: Gradient 7s ease infinite;
+	animation: Gradient 7s ease infinite;
+}
+
+.sidenav{
+	background: linear-gradient(45deg,#EE7752, #E73C7E, #23A6D5, #65e31b);
+    background-size: 800% 200%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+
+}
+
+.compSpons{
+	display: flex;
+}
+
+
+	
+
+
+/*Footer style*/
+#footerLogo{
+  width:100%;
+  height:auto;
+  /*padding-left:140px;*/
+  
+  }
+  
+  .footRow{
+    padding-left:45px;
+    padding-top:20px;
+    color: black;
+  }
+  
+  .footRow h2{
+  	padding-top: 7vh;
+   font-size:27px;
+   line-height:unset;
+   
+  }
+  
+  .footRow h5{
+   font-size:15px;
+   margin-bottom:0px;
+   line-height: unset;
+   
+  }
+  
+  
+  .footConnect a{
+  	color: black;	
+  }
+  
+
+  .footConnect h2{
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  
+  ::-moz-selection {
+       background-color: #f89106;
+       color: #000;
+}
+
+/* Works in Safari */
+::selection {
+       background-color: #f89106;
+       color: #000;
+}
+
+
+
+@media (max-width: 480px) {
+#footlogo{
+  	position: absolute;
+  	opacity: 0.5;
+  	padding-bottom: 50px;
+  }
